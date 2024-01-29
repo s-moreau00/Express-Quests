@@ -12,7 +12,8 @@ app.get("/api/users", movieControllers.getUsers);
 app.get("/api/users/:id", movieControllers.getUserById);
 app.post("/api/movies", movieControllers.postMovie);
 app.post("/api/users", movieControllers.postNewUser);
-
+app.put("/api/movies/:id", movieControllers.updateMovie);
+app.put("/api/users/:id", movieControllers.updateUser);
 //app corespond à route
 
 module.exports = app;
